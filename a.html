@@ -5,8 +5,9 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta property="og:image" content="http://www.brightpointinc.com/interactive/images/Deficit_202px.png">
 
-    <title>Data Visualization Dr.js</title>
+    <title>Data Visualization D3.js</title>
     <link type="text/css" rel="stylesheet" href="style.css">
+
     <script type="text/javascript" src="scripts/d3/d3.min.js"></script>
 
     <script type="text/javascript" src="scripts/d3/math/trigonometry.js"></script>
@@ -65,18 +66,13 @@
 
 
     <div id="mainDiv">
-        <div id="imgDiv" style="width:300px; margin:0px auto; margin-top:10px">
+        <!--div id="imgDiv" style="width:300px; margin:0px auto; margin-top:10px">
             <img id="playPause" src="images/pause_bw.png" width="24" height="24" style="float:left"/>
             <div style="float:left; margin-top:4px; margin-left:4px">click on a timeline year to skip to that point.</div>
-        </div>
-
+        </div-->
         <div id="svgDiv" style="font-size:10px"></div>
-
-
-
-
     </div>
-        <div id="toolTip" class="tooltip" style="opacity:0; width:200px; height:90px; position:absolute;">
+        <div id="toolTip" class="tooltip" style="opacity:50; width:200px; height:90px; position:absolute;">
             <div id="header1" class="header3"></div>
             <div class="header-rule"></div>
             <div id="head" class="header"></div>
@@ -102,8 +98,8 @@
  
         function run() {
 			 
-			update(0,0);
-            /*if (month < 11) month++; else {
+			//update(0,0);
+            if (month < 99) month++; else {
                 month=0;
                 if (year < countriesGrouped.length-1) year++;
             }
@@ -113,7 +109,7 @@
             }
             else {
                 update(year,month);
-            }*/
+            }
 		  
 		}
     </script>

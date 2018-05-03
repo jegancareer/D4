@@ -2,7 +2,7 @@ function update(y,m) {
 
     updateMonths(y,m);
 
-    buildChords(y,m);
+    buildChords(0,0);
 
    // mainLabel.style("font-size",innerRadius *.05);
 

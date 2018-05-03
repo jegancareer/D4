@@ -9,9 +9,9 @@ var outerRadius = (maxWidth / 2),
 var iText,iChords,eText,eChords;
 
 var angleRange=360,
-    baseYear=2001,
+    baseYear=1,
     maxMonth=1,
-    maxYear=12,
+    maxYear=10,
     monthOffset=(monthWidth)/(maxYear*12+maxMonth),
     countries,
     e_labels=[],
@@ -53,7 +53,7 @@ var header2 = d3.select(document.getElementById("header2"));
 var e_fill= d3.scale.ordinal().range(["#00AC6B","#20815D","#007046","#35D699","#60D6A9"]);
 var i_fill= d3.scale.ordinal().range(["#EF002A","#B32D45","#9B001C","#F73E5F","#F76F87"]);
 
-var monthsMap=["Jan","Feb","Mar","Apr","May","Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var monthsMap=["Pisces","Aries","Taurus","Sagittarius","Gemini","Scorpio", "Leo", "Virgo", "Cancer", "Libra", "Capricorn", "Aquarius"];
 
 d3.select(document.getElementById("bpg"))
     .style("min-width",(outerRadius*2 + 150) + "px");
