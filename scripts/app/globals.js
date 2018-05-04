@@ -5,13 +5,12 @@ var outerRadius = (maxWidth / 2),
     innerRadius = outerRadius - 100,
     monthWidth=Math.max(400,(innerRadius*2)-250);
 
-
 var iText,iChords,eText,eChords;
 
-var angleRange=360,
+var angleRange=340,
     baseYear=1,
     maxMonth=1,
-    maxYear=10,
+    maxYear=20,
     monthOffset=(monthWidth)/(maxYear*12+maxMonth),
     countries,
     e_labels=[],

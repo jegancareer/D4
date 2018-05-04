@@ -2,23 +2,9 @@
 function buildChords(y,m) {
 
     countries=countriesGrouped[y].values[m].values;
-
-    countries.sort(function (a,b) {
-        //Descending Sort
-        if (a.Exports > b.Exports) return -1;
-        else if (a.Exports < b.Exports) return 1;
-        else return 0;
-    });
-
+	////removed sorting countries
     export_countries=countries.slice(0,parseInt(countries.length/2));
-
-    countries.sort(function (a,b) {
-        //Descending Sort
-        if (a.Imports > b.Imports) return -1;
-        else if (a.Imports < b.Imports) return 1;
-        else return 0;
-    });
-
+	////removed sorting countries	
     import_countries=countries.slice(parseInt(countries.length/2),countries.length);
 
     var  import_matrix = [],
